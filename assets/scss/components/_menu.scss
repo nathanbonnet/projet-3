@@ -38,9 +38,10 @@ h1,h2,h3,h4 {
     }
 }
 
-h4 {
+.section-image h3 {
     padding-top: 20px;
     padding-bottom: 5px;
+    font-size: 15px;
     cursor: pointer;
     &::after {
         content: "";
@@ -78,6 +79,11 @@ h4 {
             font-family: 'Comic Sans MS';
             font-size: 16px;
             margin-top: 20px;
+            .bloc2 {
+                h3 {
+                    font-size: 20px;
+                }
+            }
         }
     }
     .section-image {
@@ -87,23 +93,27 @@ h4 {
         img {
             width: 30%;
             height: 30px;
+            margin-top: 20px;
         }
     }
 }
 .menu__2 {
-    h2 {
-        -webkit-background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text; 
-        background-clip: text;
-        color: transparent;
-        background-image: -webkit-linear-gradient(left,rgb(228, 124, 0),rgb(156, 47, 255));
-
+    .menu-2 {
+        background-color: rgb(253, 241, 253);
+        h2 {
+            -webkit-background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text; 
+            background-clip: text;
+            color: transparent;
+            background-image: -webkit-linear-gradient(left,rgb(228, 124, 0),rgb(156, 47, 255));
+    
+        }
     }
     .section-1 {
         color: rgb(206, 115, 0);
 
-        h4 {
+        h3 {
             padding-top: 20px;
             padding-bottom: 5px;
             cursor: pointer;
@@ -128,7 +138,7 @@ h4 {
     }
     .section-2 {
         color: rgb(174, 94, 155);
-        h4 {
+        h3 {
             padding-top: 20px;
             padding-bottom: 5px;
             cursor: pointer;
@@ -153,7 +163,7 @@ h4 {
     }
     .section-3 {
         color: rgb(123, 53, 211);
-        h4 {
+        h3 {
             padding-top: 20px;
             padding-bottom: 5px;
             cursor: pointer;
@@ -187,14 +197,17 @@ h4 {
     }
 }
 .menu__3 {
-    h2 {
-        -webkit-background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text; 
-        background-clip: text;
-        color: transparent;
-        background-image: -webkit-linear-gradient(left,rgb(0, 0, 223), rgb(155, 198, 245));
+    .menu-3 {
+            background-color: rgb(253, 241, 253);
+        h2 {
+            -webkit-background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text; 
+            background-clip: text;
+            color: transparent;
+            background-image: -webkit-linear-gradient(left,rgb(0, 0, 223), rgb(155, 198, 245));
 
+        }
     }
     .section-image {
         display: flex;
@@ -207,14 +220,17 @@ h4 {
     }
 }
 .menu__4 {
-    h2 {
-        -webkit-background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text; 
-        background-clip: text;
-        color: transparent;
-        background-image: -webkit-linear-gradient(left,rgb(0, 157, 49), rgb(168, 255, 111));
+    .menu-4 {
+        background-color: rgb(253, 241, 253);
+        h2 {
+            -webkit-background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text; 
+            background-clip: text;
+            color: transparent;
+            background-image: -webkit-linear-gradient(left,rgb(0, 157, 49), rgb(168, 255, 111));
 
+        }
     }
     .section-image {
         display: flex;
@@ -233,6 +249,8 @@ h4 {
     margin-top: 5%;
     .menu-1 {
         background-color: white;
+    }
+    .menu-1, .menu-2, .menu-3, .menu-4 {
         box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
         width: 45%;
         padding-left: 50px;
@@ -242,6 +260,7 @@ h4 {
         font-size: 16px;
         margin-top: 20px;
         margin-bottom: 10%;
+        padding-top: 50px;
         .menu {
             display: flex;
             flex-direction: column;
@@ -273,17 +292,16 @@ h4 {
             font-size: 40px;
             margin-top: -50%;
         }
-        .fa {
+        .logo-container {
             display: flex;
-            align-items: flex-start;
             justify-content: center;
-            -webkit-background-clip: text;
-            -webkit-background-clip: text;
-            -moz-background-clip: text; 
-            background-clip: text;
-            color: transparent;
-            background-image: -webkit-linear-gradient(right,#FF8A65, #f44336);
-            font-size: 25px;
+            .fa {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: -webkit-linear-gradient(right,#FF8A65, #f44336);
+                font-size: 25px;
+            }
         }
         .bloc {
             display: flex;
@@ -294,6 +312,12 @@ h4 {
                 align-items: center;
                 justify-content: space-around;
                 width: 40%;
+                .fa {
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: -webkit-linear-gradient(right,#FF8A65, #f44336);
+                }
             }
         }
     }
