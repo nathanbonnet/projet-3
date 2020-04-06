@@ -59,8 +59,8 @@ h1, .home {
                         background: rgb(255, 222, 218);
                         font-size: 23px;
                         transition: .5s;
-                        padding-top: 70px;
-                        padding-bottom: 70px;
+                        padding-top: 80px;
+                        padding-bottom: 80px;
                         overflow: hidden;
                             .fa {
                                 margin-top: -20px;
@@ -132,9 +132,10 @@ h1, .home {
         }        
 
         .bloc-point {
-            display: none;
+            display: flex;
             font-size: 1.5em;
             margin-top: -10px;
+            margin-right: 20px;
         }
         .point-1 {
             animation: point-1 1000ms infinite;
@@ -187,15 +188,6 @@ h1, .home {
                 margin-top: 0px;
             }
         }
-        &:hover {
-            .bloc-point {
-                display: flex;
-                width: 10%;
-            }
-            .bloc-fix {
-                display: none;
-            }
-        } 
         a {
             text-decoration: none;
             color: rgb(255, 208, 0);
@@ -267,7 +259,7 @@ h1, .home {
 
 // responsive
 
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 1250px) {
     .container__prochainement {
         .bloc__prochainement {
             width: 20%;
@@ -275,10 +267,38 @@ h1, .home {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 920px) {
     .container__prochainement {
         .bloc__prochainement {
             width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section__menu { 
+        .bloc__menu {
+            .bloc {
+                display: flex;
+                flex-direction: column;
+                .zoom {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .container__prochainement {
+        .bloc__prochainement {
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container__prochainement {
+        .bloc__prochainement {
+            width: 35%;
         }
     }
 }
@@ -301,19 +321,24 @@ h1, .home {
     }
 
     .container__prochainement {
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         .bloc__prochainement {
-            width: 35%;
+            width: 45%;
         }
     }
 }
 
-@media screen and (max-width: 550px) {
-
+@media screen and (max-width: 400px) {
+    .home {
+        .mention, .contact {
+            font-size: 17px;
+        }
+    }
     .container__prochainement {
-        margin-bottom: 20px;
         .bloc__prochainement {
-            width: 45%;
+            h2 {
+               font-size: .6em;
+            }
         }
     }
 }
