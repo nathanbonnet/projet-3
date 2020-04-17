@@ -32,75 +32,69 @@ h1, .home {
 .section__menu {
     display: flex;
     justify-content: center;
-    .bloc__menu {
-        margin-top: 100px;
+    padding-top: 100px;
+    .bloc {
+        width: 100%;
         display: flex;
         justify-content: center;
-        .bloc {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            .zoom {
-                width: 30%;
-                overflow: hidden;
-                box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
-                margin-right: 20px;
-                margin-left: 20px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                a {
-                    width: 35%;
-                    text-align: center;
-                    color: black;
-                    text-decoration: none;
-                    transition: all .3s;
-                    .menu {
-                        background: rgb(255, 222, 218);
-                        font-size: 23px;
-                        transition: .5s;
-                        padding-top: 80px;
-                        padding-bottom: 80px;
-                        overflow: hidden;
-                            .fa {
-                                margin-top: -20px;
-                                background-clip: text;
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                                background-image: -webkit-linear-gradient(right,#FF8A65, #f44336);
-                            }
-                            &:hover{
-                                transform: scale(1.06);
-                                opacity: 0.5;
-                            }
+        flex-wrap: wrap;
+        max-width: 900px;
+        .zoom {
+            width: 30%;
+            overflow: hidden;
+            box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            a {
+                text-align: center;
+                color: black;
+                text-decoration: none;
+                transition: all .3s;
+                .menu {
+                    background: rgb(255, 222, 218);
+                    font-size: 23px;
+                    transition: .5s;
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    overflow: hidden;
+                        .fa {
+                            margin-top: -20px;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-image: -webkit-linear-gradient(right,#FF8A65, #f44336);
                         }
-                    
-                    .menu-2 {
-                        background: rgb(253, 255, 252);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-image: -webkit-linear-gradient(left, orange, purple);
-                        .bloc-menu {
-                            .titre {
-                                font-family: 'so';
-                            }
+                        &:hover{
+                            transform: scale(1.06);
+                            opacity: 0.5;
                         }
                     }
-                    .menu-3 {
-                        background: rgb(253, 255, 252);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-image: -webkit-linear-gradient(left, #0D47A1, #4FC3F7);
+                
+                .menu-2 {
+                    background: rgb(253, 255, 252);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: -webkit-linear-gradient(left, orange, purple);
+                    .titre {
+                        font-family: 'so';
                     }
-                    .menu-4 {
-                        background: rgb(253, 255, 252);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-image: -webkit-linear-gradient(left, green, #FDD835);
-                    }
+                }
+                .menu-3 {
+                    background: rgb(253, 255, 252);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: -webkit-linear-gradient(left, #0D47A1, #4FC3F7);
+                }
+                .menu-4 {
+                    background: rgb(253, 255, 252);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: -webkit-linear-gradient(left, green, #FDD835);
                 }
             }
         }
@@ -195,7 +189,7 @@ h1, .home {
     }
 }
 
-.home {
+footer {
     background-color: rgb(61, 160, 135);
     color: rgb(255, 208, 0);
     display: flex;
@@ -277,14 +271,13 @@ h1, .home {
 
 @media screen and (max-width: 700px) {
     .section__menu { 
-        .bloc__menu {
-            .bloc {
-                display: flex;
-                flex-direction: column;
-                .zoom {
-                    width: 100%;
-                    margin-left: 0;
-                }
+        .bloc {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            .zoom {
+                width: 100%;
+                margin-left: 0;
             }
         }
     }
@@ -311,11 +304,9 @@ h1, .home {
     }
 
     .section__menu {
-        .bloc__menu {
-            .bloc {
-                a {
-                    width: 70%;
-                }
+        .bloc {
+            a {
+                width: 70%;
             }
         }
     }
@@ -329,7 +320,7 @@ h1, .home {
 }
 
 @media screen and (max-width: 400px) {
-    .home {
+    footer {
         .mention, .contact {
             font-size: 17px;
         }
