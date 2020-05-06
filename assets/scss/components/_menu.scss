@@ -104,7 +104,6 @@ h1,h2,h3,h4 {
             -webkit-background-clip: text;
             -webkit-background-clip: text;
             -moz-background-clip: text; 
-            background-clip: text;
             color: transparent;
             background-image: -webkit-linear-gradient(left,rgb(228, 124, 0),rgb(156, 47, 255));
     
@@ -203,7 +202,6 @@ h1,h2,h3,h4 {
             -webkit-background-clip: text;
             -webkit-background-clip: text;
             -moz-background-clip: text; 
-            background-clip: text;
             color: transparent;
             background-image: -webkit-linear-gradient(left,rgb(0, 0, 223), rgb(155, 198, 245));
 
@@ -226,7 +224,6 @@ h1,h2,h3,h4 {
             -webkit-background-clip: text;
             -webkit-background-clip: text;
             -moz-background-clip: text; 
-            background-clip: text;
             color: transparent;
             background-image: -webkit-linear-gradient(left,rgb(0, 157, 49), rgb(168, 255, 111));
 
@@ -286,7 +283,6 @@ h1,h2,h3,h4 {
             -webkit-background-clip: text;
             -webkit-background-clip: text;
             -moz-background-clip: text; 
-            background-clip: text;
             color: transparent;
             background-image: -webkit-linear-gradient(right,#FF8A65, #f44336);
             font-size: 40px;
@@ -296,7 +292,6 @@ h1,h2,h3,h4 {
             display: flex;
             justify-content: center;
             .fa {
-                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-image: -webkit-linear-gradient(right,#FF8A65, #f44336);
@@ -313,7 +308,6 @@ h1,h2,h3,h4 {
                 justify-content: space-around;
                 width: 40%;
                 .fa {
-                    background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-image: -webkit-linear-gradient(right,#FF8A65, #f44336);
