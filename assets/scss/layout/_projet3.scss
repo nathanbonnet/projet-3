@@ -18,21 +18,9 @@ h1, .home {
     font-family: 'Kaushan Script', cursive;
 }
 
-
-.banner {
-    background-color: rgb(61, 160, 135);
-    color: rgb(255, 208, 0);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-} 
-
 .section__menu {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
     .bloc {
         width: 100%;
         display: flex;
